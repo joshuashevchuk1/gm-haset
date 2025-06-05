@@ -4,3 +4,6 @@
 [submodule "gm-ai-api"]
 	path = gm-ai-api
 	url = git@github.com:joshuashevchuk1/gm-ai-api.git
+[submodule "gm-space-api"]
+	path = gm-space-api
+	url = git@github.com:joshuashevchuk1/gm-space-api.git
