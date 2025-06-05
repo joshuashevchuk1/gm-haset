@@ -1,3 +1,6 @@
 [submodule "gm-base-api"]
 	path = gm-base-api
 	url = git@github.com:joshuashevchuk1/gm-base-api.git
+[submodule "gm-ai-api"]
+	path = gm-ai-api
+	url = git@github.com:joshuashevchuk1/gm-ai-api.git
