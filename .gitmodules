@@ -1,0 +1,3 @@
+[submodule "GM-Base-Api"]
+	path = GM-Base-Api
+	url = https://github.com/joshuashevchuk1/GM-Base-Api
