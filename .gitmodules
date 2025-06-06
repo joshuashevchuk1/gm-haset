@@ -7,3 +7,6 @@
 [submodule "gm-space-api"]
 	path = gm-space-api
 	url = git@github.com:joshuashevchuk1/gm-space-api.git
+[submodule "gm-media"]
+	path = gm-media
+	url = git@github.com:joshuashevchuk1/gm-media.git
