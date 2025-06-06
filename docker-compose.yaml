@@ -1,0 +1,47 @@
+version: '3.9'
+
+services:
+  mongo:
+    image: mongo:6
+    container_name: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  gm-ai-api:
+    build:
+      context: ./gm-ai-api
+    container_name: gm-ai-api
+    ports:
+      - "8010:8010"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/ai_db
+
+  gm-space-api:
+    build:
+      context: ./gm-space-api
+    container_name: gm-space-api
+    ports:
+      - "8020:8020"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/space_db
+
+  gm-base-api:
+    build:
+      context: ./gm-base-api
+    container_name: gm-base-api
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/base_db
+
+volumes:
+  mongo-data:
