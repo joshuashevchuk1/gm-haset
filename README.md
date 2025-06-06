@@ -12,3 +12,8 @@ To close the project
 ```commandline
 docker-compose down
 ```
+
+contributors:
+-josh shevchuck
+-michael baart
+-george spake
