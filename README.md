@@ -13,6 +13,12 @@ To close the project
 docker-compose down
 ```
 
+To begin a new session hit the following endpoint
+
+```commandline
+
+```
+
 contributors:
 -josh shevchuck
 -michael baart
